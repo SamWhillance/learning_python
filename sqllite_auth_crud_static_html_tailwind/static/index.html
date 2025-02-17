@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Manager</title>
+    <!-- Include Tailwind CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto p-6">
+        <h1 class="text-4xl font-bold text-center mb-6">Book Manager</h1>
+        
+        <div class="bg-gray-800 shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Authentication</h2>
+            <div class="mb-4">
+                <label for="username" class="block">Username:</label>
+                <input type="text" id="username" placeholder="admin" class="border border-gray-600 bg-gray-700 rounded-lg p-2 w-full text-white" required>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block">Password:</label>
+                <input type="password" id="password"  placeholder="123" class="border border-gray-600 bg-gray-700 rounded-lg p-2 w-full text-white" required>
+            </div>
+            <button onclick="fetchBooks()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-200">Fetch Books</button>
+        </div>
+
+        <div class="bg-gray-800 shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Books:</h2>
+            <ul id="book-list" class="list-disc pl-5 text-gray-300"></ul>
+        </div>
+
+        <div class="bg-gray-800 shadow-md rounded-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4">Add a New Book:</h2>
+            <div class="mb-4">
+                <input type="text" id="title" placeholder="Title" class="border border-gray-600 bg-gray-700 rounded-lg p-2 w-full mb-2 text-white" required>
+                <input type="text" id="author" placeholder="Author" class="border border-gray-600 bg-gray-700 rounded-lg p-2 w-full mb-2 text-white" required>
+                <input type="number" id="year" placeholder="Year" class="border border-gray-600 bg-gray-700 rounded-lg p-2 w-full mb-2 text-white" required>
+            </div>
+            <button onclick="addBook()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition duration-200">Add Book</button>
+        </div>
+    </div>
+    <script src="static/app.js"></script>
+</body>
+</html> 
