@@ -1,5 +1,15 @@
 # Learning Python / Flask
 
+I'm learning Python / Flask by building a simple CRUD application.
+
+Technologies used:
+
+- Python
+- Flask
+- SQLite
+- HTML
+- Tailwind CSS
+
 ![Preview](sqllite_auth_crud_static_html_tailwind/preview.png)
 
 # How to run
